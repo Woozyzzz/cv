@@ -1,0 +1,45 @@
+@import "helper.scss";
+
+@media print {
+  body {
+    margin: 0;
+    section {
+      .charts {
+        flex-direction: column;
+        #radar {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    margin: 0;
+    article {
+      width: auto;
+      height: auto;
+      section {
+        img {
+          display: none;
+        }
+        .charts {
+          flex-direction: column;
+          #radar {
+            display: none;
+          }
+        }
+        &.intern {
+          header {
+            flex-wrap: wrap;
+          }
+        }
+        &.bio {
+          .info {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

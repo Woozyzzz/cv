@@ -1,0 +1,92 @@
+@import "./helper.scss";
+body {
+  article {
+    section {
+      padding: 4px 0;
+      &.header {
+        position: relative;
+        h1 {
+          font-size: 24px;
+          margin-top: 0;
+          text-align: center;
+        }
+        img {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+        p {
+          text-align: center;
+        }
+      }
+      &.education {
+        ul {
+          li {
+            &::before {
+              content: "\1F44D";
+            }
+          }
+        }
+      }
+      &.skills {
+        .charts {
+          display: flex;
+        }
+        ul {
+          li {
+            &::before {
+              content: "\1F44C";
+            }
+          }
+        }
+      }
+      &.projects,
+      &.openSource {
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin: 12px 0;
+          header {
+            display: flex;
+            flex-direction: column;
+            h3::before {
+              content: "🧠";
+            }
+          }
+          p {
+            margin: 0;
+          }
+          img {
+            width: 80px;
+          }
+        }
+      }
+      &.blogs,
+      &.intern {
+        header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        p {
+          margin: 4px 0;
+        }
+      }
+      &.bio {
+        .info {
+          display: flex;
+          justify-content: space-between;
+        }
+        .papersWrapper {
+          .papers {
+            li {
+              text-indent: 1em;
+              font-size: small;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "helper.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-hei;
+  color: #333;
+  background: #777;
+  margin: 20px 0;
+}
+article {
+  width: 21cm;
+  min-height: 29.7cm;
+  background: white;
+  margin: 0 auto;
+  padding: 1.2em;
+  overflow: auto;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: #000;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+p {
+  margin: 0.3em 0;
+}
+strong {
+  color: #f90;
+}
