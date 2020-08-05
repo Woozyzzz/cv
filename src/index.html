@@ -14,7 +14,7 @@
       <section class="header">
         <h1>武林秀</h1>
         <img src="images/photo.jpg" alt="照片" height="100" />
-        <p>男 | 23岁 | 前端开发工程师 | 北京 | 硕士</p>
+        <p>男 | 24岁 | 前端开发工程师 | 北京 | 硕士</p>
         <p>
           <a href="tel:+8615901237656">159 0123 7656</a> |
           <a href="mailto:woozyzzz@foxmail.com">woozyzzz@foxmail.com</a>
@@ -59,15 +59,15 @@
               熟练掌握<strong> Vue 全家桶</strong>的使用，包括
               VueCli、VueRouter、Vuex 等
             </li>
-            <li>
+            <!-- <li>
               熟悉<strong> React 全家桶</strong>的使用，包括
               create-react-app、ReactRouter、Redux 等
-            </li>
+            </li> -->
             <li>
               熟悉前后端分离技术，包括 AJAX、跨域、前端路由、Cookie、Session 等
             </li>
             <li>熟悉 Echarts 图表库的使用</li>
-            <li>熟练掌握 Python， Linux 开发环境</li>
+            <li>熟悉 Python， Linux 开发环境</li>
             <li>掌握 Git/Github 工作处理流程</li>
             <li>了解<strong> TypeScript </strong>并能够在项目中使用</li>
             <li>了解 Webpack 的配置与优化</li>
@@ -84,24 +84,30 @@
             <div class="description">
               <header>
                 <h3>点滴记账</h3>
-                <span><a href="#">源码链接</a> <a href="#">项目预览</a></span>
+                <span>
+                  <a href="https://github.com/Woozyzzz/crumb-morney"
+                  >源码链接</a>
+                  <a href="http://woozyzzz.gitee.io/crumb-morney-website/#/money"
+                  >项目预览</a>
+                </span>
               </header>
               <p>
-                点滴记账是一款基于
+                一款基于
                 <strong>Vue</strong> / <strong>Vue Router</strong> /
                 <strong>Vuex</strong> /
-                <strong>TypeScript </strong> 的极简单页面应用。
+                <strong>TypeScript </strong> 的极简风格的单页面应用。
               </p>
               <p>
-                由本人独立设计及实现（借鉴某款APP），源代码几乎完全使用
-                TypeScript 实现并用到了装饰器语法。
+                从自身需求出发，由本人独立设计及实现，操作流程简单，三秒钟即可快速记账。
               </p>
+              <p>源代码完全使用
+                TypeScript 配合<strong> vue-property-decorator 装饰器语法</strong>实现，采用 SCSS 编写页面样式，并大量使用了<strong>$变量</strong>与<strong>%占位符</strong>优化代码。</p>
               <p>
-                遇到了很多 webpack 和 TypeScript
-                方面的问题，解决过程记录在本人的博客（配置 SVG 插件、TypeScript
-                如何使用 computed、props）
+                期间遇到了诸多有关 webpack 和 TypeScript
+                的问题，解决问题过程已记录在本人的博客。
               </p>
             </div>
+            <img src="images/crumb-morney-website.png" alt="" />
           </li>
           <li>
             <div class="description">
@@ -117,7 +123,7 @@
                 </span>
               </header>
               <p>
-                前端导航是一款基于<strong> jQuery </strong>的实用网页导航，支持网页搜索、常用网站的添加与删除功能。
+                一款基于<strong> jQuery </strong>的实用网页导航，支持网页搜索、常用网站的添加与删除功能。
               </p>
               <p>
                多次使用<strong> SVG Symbols</strong>，通过<strong> Flex 布局</strong>与<strong>媒体查询</strong>优化移动端与 PC，添加了刷新动画。
@@ -149,7 +155,7 @@
             </div>
             <img src="images/canvas-drawing-board.png" alt="" />
           </li>
-          <li>
+          <li style="page-break-before:always;">
             <div class="description">
               <header>
                 <h3>手写 jQuery</h3>
@@ -203,17 +209,25 @@
           <li>
             <div class="description">
               <header>
-                <h3>简易画板</h3>
-                <span><a href="#">源码链接</a> <a href="#">项目预览</a></span>
+                <h3>封装 DOM 库</h3>
+                <span>
+                  <a href="https://github.com/Woozyzzz/dom-library-object"
+                    >源码链接</a
+                  >
+                  <a href="https://www.yuque.com/woozyzzz/ybz8i1/yo9rg6"
+                    >博客地址</a
+                  >
+                </span>
               </header>
               <p>
-                为了加深对 Canvas 中 API 的理解，自主设计并完成了此项目。
+                一款采用对象风格封装的原生 DOM 库，实现对节点的增删改查操作。
               </p>
               <p>
-                功能包含支持 PC 与移动端、画笔颜色与粗细调节、橡皮擦等。
+                代码中大量运用<strong>重载</strong>与<strong>适配</strong>的设计模式，现已将项目的实现思路与 API
+                的使用方法总结成博客。
               </p>
-              <p>使用 lineTo 绘制路径，保证了画笔快速移动时线条的连贯性。</p>
             </div>
+            <img src="images/dom-library-object-blog.png" alt="" />
           </li>
         </ul>
       </section>

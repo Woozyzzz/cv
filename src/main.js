@@ -23,8 +23,8 @@ const option = {
     indicator: [
       { name: "静态页面", max: 100 },
       { name: "编程基础", max: 100 },
+      { name: "原生 JS", max: 100 },
       { name: "Vue 全家桶", max: 100 },
-      { name: "React 全家桶", max: 100 },
       { name: "项目开发", max: 100 },
       { name: "沟通能力", max: 100 },
     ],
