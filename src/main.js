@@ -9,9 +9,10 @@ const headerInfoText = `男 | ${diffYears} | 前端开发工程师 | 北京 | �
 elHeaderInfo.textContent = headerInfoText;
 
 const elCharts = el(".charts");
+const elChartsUl = el(".charts>ul");
 const elRadar = el("#radar");
 // 基于准备好的dom，初始化echarts实例
-elRadar.style.width = `${elCharts.clientWidth * 0.9}px`;
+elRadar.style.width = `${elCharts.clientWidth - elChartsUl.clientWidth}px`;
 const myChart = echarts.init(elRadar);
 
 // 指定图表的配置项和数据
@@ -34,9 +35,12 @@ const option = {
       { name: "编程基础", max: 100 },
       { name: "原生 JS", max: 100 },
       { name: "Vue 全家桶", max: 100 },
+      { name: "数据可视化", max: 100 },
       { name: "项目开发", max: 100 },
       { name: "沟通能力", max: 100 },
     ],
+    radius: "70%",
+    nameGap: 8,
   },
   series: [
     {
@@ -45,7 +49,7 @@ const option = {
       areaStyle: { normal: {} },
       data: [
         {
-          value: [100, 90, 90, 80, 70, 80],
+          value: [100, 90, 90, 95, 90, 90, 85],
           name: "能力分配",
         },
       ],

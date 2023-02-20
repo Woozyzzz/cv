@@ -39,6 +39,8 @@
         display: flex;
 
         ul {
+          width: 50%;
+
           li {
             &::before {
               content: "\1F44C";
@@ -55,7 +57,7 @@
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
-          margin: 24px 0;
+          margin: 0 0 8px;
 
           .detail {
             .detail__title {
@@ -76,10 +78,6 @@
             width: 80px;
           }
         }
-      }
-
-      &.article__open-source {
-        display: none;
       }
     }
 

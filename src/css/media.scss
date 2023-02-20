@@ -5,12 +5,18 @@
     margin: 0;
 
     .article {
-      section {
-        .charts {
-          flex-direction: column;
+      .section {
+        &.article__skills {
+          .charts {
+            flex-direction: column;
 
-          #radar {
-            display: none;
+            ul {
+              width: auto;
+            }
+
+            #radar {
+              display: none;
+            }
           }
         }
       }
@@ -26,16 +32,22 @@
       width: auto;
       height: auto;
 
-      section {
+      .section {
         img {
           display: none;
         }
 
-        .charts {
-          flex-direction: column;
+        &.article__skills {
+          .charts {
+            flex-direction: column;
 
-          #radar {
-            display: none;
+            ul {
+              width: auto;
+            }
+
+            #radar {
+              display: none;
+            }
           }
         }
 
