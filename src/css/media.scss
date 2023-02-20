@@ -3,38 +3,49 @@
 @media print {
   body {
     margin: 0;
-    section {
-      .charts {
-        flex-direction: column;
-        #radar {
-          display: none;
+
+    .article {
+      section {
+        .charts {
+          flex-direction: column;
+
+          #radar {
+            display: none;
+          }
         }
       }
     }
   }
 }
+
 @media screen and (max-width: 500px) {
   body {
     margin: 0;
-    article {
+
+    .article {
       width: auto;
       height: auto;
+
       section {
         img {
           display: none;
         }
+
         .charts {
           flex-direction: column;
+
           #radar {
             display: none;
           }
         }
-        &.intern {
-          header {
+
+        &.article__internship-experience {
+          .title {
             flex-wrap: wrap;
           }
         }
-        &.bio {
+
+        &.article__bio {
           .info {
             flex-direction: column;
           }

@@ -1,37 +1,43 @@
 @import "./helper.scss";
-body {
-  article {
-    section {
-      padding: 4px 0;
-      &.header {
-        position: relative;
-        h1 {
-          font-size: 24px;
-          margin-top: 0;
-          text-align: center;
-        }
-        img {
-          position: absolute;
-          top: 0;
-          right: 0;
-        }
-        p {
-          text-align: center;
-        }
+
+.article {
+  .section {
+    padding: 4px 0;
+
+    &.article__header {
+      position: relative;
+
+      h1 {
+        font-size: 24px;
+        margin-top: 0;
+        text-align: center;
       }
-      &.education {
-        ul {
-          li {
-            &::before {
-              content: "\1F44D";
-            }
+
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+    &.article__education {
+      ul {
+        li {
+          &::before {
+            content: "\1F44D";
           }
         }
       }
-      &.skills {
-        .charts {
-          display: flex;
-        }
+    }
+
+    &.article__skills {
+      .charts {
+        display: flex;
+
         ul {
           li {
             &::before {
@@ -40,53 +46,67 @@ body {
           }
         }
       }
-      &.projects,
-      &.openSource {
+    }
+
+    &.article__projects,
+    &.article__open-source {
+      ul {
         li {
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
           margin: 24px 0;
-          header {
-            display: flex;
-            flex-direction: column;
-            h3::before {
-              content: "🧠";
+
+          .detail {
+            .detail__title {
+              display: flex;
+              flex-direction: column;
+
+              h3::before {
+                content: "🧠";
+              }
+            }
+
+            p {
+              margin: 0;
             }
           }
-          p {
-            margin: 0;
-          }
+
           img {
             width: 80px;
           }
         }
-        &.openSource {
-          display: none;
-        }
       }
-      &.blogs,
-      &.intern {
-        header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-        p {
-          margin: 4px 0;
-        }
+
+      &.article__open-source {
+        display: none;
       }
-      &.bio {
-        .info {
-          display: flex;
-          justify-content: space-between;
-        }
-        .papersWrapper {
-          .papers {
-            li {
-              text-indent: 1em;
-              font-size: small;
-            }
+    }
+
+    &.article__blogs,
+    &.article__internship-experience {
+      p {
+        margin: 4px 0;
+      }
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    &.article__bio {
+      .info {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .papers-wrapper {
+        .papers {
+          li {
+            text-indent: 1em;
+            font-size: small;
           }
         }
       }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-hans">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="css/style.scss" />
     <title>武林秀-个人简历</title>
   </head>
+
   <body>
-    <article>
-      <section class="header">
+    <article class="article">
+      <section class="section article__header">
         <h1>武林秀</h1>
         <img src="images/photo.jpg" alt="照片" height="100" />
         <p>男 | 24岁 | 前端开发工程师 | 北京 | 硕士</p>
@@ -20,7 +21,8 @@
           <a href="mailto:woozyzzz@foxmail.com">woozyzzz@foxmail.com</a>
         </p>
       </section>
-      <section class="education">
+
+      <section class="section article__education">
         <h2>教育背景</h2>
         <hr />
         <h3>大连民族大学</h3>
@@ -28,9 +30,7 @@
           计算机技术&nbsp;&nbsp;硕士 （<time>2017年</time>~<time>2020年</time>）
         </span>
         <ul>
-          <li>
-            荣誉：新浪微热点第一届传播数据挖掘竞赛三等奖、学业一等奖学金
-          </li>
+          <li>荣誉：新浪微热点第一届传播数据挖掘竞赛三等奖、学业一等奖学金</li>
         </ul>
         <h3>内蒙古民族大学</h3>
         <span>
@@ -38,12 +38,11 @@
           （<time>2012年</time>~<time>2016年</time>）
         </span>
         <ul>
-          <li>
-            荣誉：内蒙古民族大学优秀毕业设计、校级三等奖学金
-          </li>
+          <li>荣誉：内蒙古民族大学优秀毕业设计、校级三等奖学金</li>
         </ul>
       </section>
-      <section class="skills">
+
+      <section class="section article__skills">
         <h2>专业技能</h2>
         <hr />
         <div class="charts">
@@ -76,21 +75,25 @@
           <div id="radar"></div>
         </div>
       </section>
-      <section class="projects">
+
+      <section class="section article__projects">
         <h2>项目经历</h2>
         <hr />
         <ul>
           <li>
-            <div class="description">
-              <header>
+            <div class="detail">
+              <div class="detail__title">
                 <h3>点滴记账</h3>
                 <span>
                   <a href="https://github.com/Woozyzzz/crumb-morney"
-                  >源码链接</a>
-                  <a href="http://woozyzzz.gitee.io/crumb-morney-website/#/money"
-                  >项目预览</a>
+                    >源码链接</a
+                  >
+                  <a
+                    href="http://woozyzzz.gitee.io/crumb-morney-website/#/money"
+                    >项目预览</a
+                  >
                 </span>
-              </header>
+              </div>
               <p>
                 一款基于
                 <strong>Vue</strong> / <strong>Vue Router</strong> /
@@ -100,8 +103,12 @@
               <p>
                 从自身需求出发，由本人独立设计及实现，操作流程简单，三秒钟即可快速记账。
               </p>
-              <p>源代码完全使用
-                TypeScript 配合<strong> vue-property-decorator 装饰器语法</strong>实现，采用 SCSS 编写页面样式，并大量使用了<strong>$变量</strong>与<strong>%占位符</strong>优化代码。</p>
+              <p>
+                源代码完全使用 TypeScript 配合<strong>
+                  vue-property-decorator 装饰器语法</strong
+                >实现，采用 SCSS
+                编写页面样式，并大量使用了<strong>$变量</strong>与<strong>%占位符</strong>优化代码。
+              </p>
               <p>
                 期间遇到了诸多有关 webpack 和 TypeScript
                 的问题，解决问题过程已记录在本人的博客。
@@ -110,31 +117,35 @@
             <img src="images/crumb-morney-website.png" alt="" />
           </li>
           <li>
-            <div class="description">
-              <header>
+            <div class="detail">
+              <div class="detail__title">
                 <h3>前端导航</h3>
                 <span>
-                  <a href="https://github.com/Woozyzzz/navigation"
-                    >源码链接</a
-                  >
+                  <a href="https://github.com/Woozyzzz/navigation">源码链接</a>
                   <a href="http://woozyzzz.gitee.io/navigation/dist"
                     >项目预览</a
                   >
                 </span>
-              </header>
+              </div>
               <p>
-                一款基于<strong> jQuery </strong>的实用网页导航，支持网页搜索、常用网站的添加与删除功能。
+                一款基于<strong> jQuery </strong
+                >的实用网页导航，支持网页搜索、常用网站的添加与删除功能。
               </p>
               <p>
-               多次使用<strong> SVG Symbols</strong>，通过<strong> Flex 布局</strong>与<strong>媒体查询</strong>优化移动端与 PC，添加了刷新动画。
+                多次使用<strong> SVG Symbols</strong>，通过<strong>
+                  Flex 布局</strong
+                >与<strong>媒体查询</strong>优化移动端与 PC，添加了刷新动画。
               </p>
-              <p>采用哈希表结构配合 localStorage / JSON 序列化实现常用网页的存储功能，PC 端可以使用键盘快捷键访问网页。</p>
+              <p>
+                采用哈希表结构配合 localStorage / JSON
+                序列化实现常用网页的存储功能，PC 端可以使用键盘快捷键访问网页。
+              </p>
             </div>
             <img src="images/navigation.png" alt="" />
           </li>
           <li>
-            <div class="description">
-              <header>
+            <div class="detail">
+              <div class="detail__title">
                 <h3>简易画板</h3>
                 <span>
                   <a href="https://github.com/Woozyzzz/canvas-drawing-board"
@@ -144,20 +155,25 @@
                     >项目预览</a
                   >
                 </span>
-              </header>
+              </div>
               <p>
-                为了加深对<strong> Canvas </strong>中 API 的理解，自主设计并完成了一款画图板应用。
+                为了加深对<strong> Canvas </strong>中 API
+                的理解，自主设计并完成了一款画图板应用。
               </p>
               <p>
-                设置<strong>事件委托</strong>调节画笔颜色与粗细，支持 PC 与移动端，优化移动端页面，添加了橡皮擦功能。
+                设置<strong>事件委托</strong>调节画笔颜色与粗细，支持 PC
+                与移动端，优化移动端页面，添加了橡皮擦功能。
               </p>
-              <p>使用 lineTo 绘制路径，保证了画笔快速移动时线条的连贯性，从而提升用户体验。</p>
+              <p>
+                使用 lineTo
+                绘制路径，保证了画笔快速移动时线条的连贯性，从而提升用户体验。
+              </p>
             </div>
             <img src="images/canvas-drawing-board.png" alt="" />
           </li>
-          <li style="page-break-before:always;">
-            <div class="description">
-              <header>
+          <li style="page-break-before: always">
+            <div class="detail">
+              <div class="detail__title">
                 <h3>手写 jQuery</h3>
                 <span>
                   <a href="https://github.com/Woozyzzz/dom-library-jquery"
@@ -167,10 +183,9 @@
                     >博客地址</a
                   >
                 </span>
-              </header>
+              </div>
+              <p>一款简易 jQuery，采用链式风格对原生 DOM 进行封装。</p>
               <p>
-                一款简易 jQuery，采用链式风格对原生 DOM 进行封装。
-              </p>
                 该项目运用<strong>原型</strong>、<strong>闭包</strong>、<strong>别名</strong>等设计模式，实现了元素选择、元素创建、属性修改等常用功能。
               </p>
               <p>封装过程使我对原型链 和 jQuery 有了更深刻的认识。</p>
@@ -178,8 +193,8 @@
             <img src="images/dom-library-jquery-blog.png" alt="" />
           </li>
           <li>
-            <div class="description">
-              <header>
+            <div class="detail">
+              <div class="detail__title">
                 <h3>封装 DOM 库</h3>
                 <span>
                   <a href="https://github.com/Woozyzzz/dom-library-object"
@@ -189,26 +204,139 @@
                     >博客地址</a
                   >
                 </span>
-              </header>
+              </div>
               <p>
                 一款采用对象风格封装的原生 DOM 库，实现对节点的增删改查操作。
               </p>
               <p>
-                代码中大量运用<strong>重载</strong>与<strong>适配</strong>的设计模式，现已将项目的实现思路与 API
-                的使用方法总结成博客。
+                代码中大量运用<strong>重载</strong>与<strong>适配</strong>的设计模式，现已将项目的实现思路与
+                API 的使用方法总结成博客。
               </p>
             </div>
             <img src="images/dom-library-object-blog.png" alt="" />
           </li>
         </ul>
       </section>
-      <section class="openSource">
+
+      <section class="section article__open-source">
         <h2>开源项目</h2>
         <hr />
         <ul>
           <li>
-            <div class="description">
-              <header>
+            <div class="detail">
+              <div class="detail__title">
+                <h3>点滴记账</h3>
+                <span>
+                  <a href="https://github.com/Woozyzzz/crumb-morney"
+                    >源码链接</a
+                  >
+                  <a
+                    href="http://woozyzzz.gitee.io/crumb-morney-website/#/money"
+                    >项目预览</a
+                  >
+                </span>
+              </div>
+              <p>
+                一款基于
+                <strong>Vue</strong> / <strong>Vue Router</strong> /
+                <strong>Vuex</strong> /
+                <strong>TypeScript </strong> 的极简风格的单页面应用。
+              </p>
+              <p>
+                从自身需求出发，由本人独立设计及实现，操作流程简单，三秒钟即可快速记账。
+              </p>
+              <p>
+                源代码完全使用 TypeScript 配合<strong>
+                  vue-property-decorator 装饰器语法</strong
+                >实现，采用 SCSS
+                编写页面样式，并大量使用了<strong>$变量</strong>与<strong>%占位符</strong>优化代码。
+              </p>
+              <p>
+                期间遇到了诸多有关 webpack 和 TypeScript
+                的问题，解决问题过程已记录在本人的博客。
+              </p>
+            </div>
+            <img src="images/crumb-morney-website.png" alt="" />
+          </li>
+          <li>
+            <div class="detail">
+              <div class="detail__title">
+                <h3>前端导航</h3>
+                <span>
+                  <a href="https://github.com/Woozyzzz/navigation">源码链接</a>
+                  <a href="http://woozyzzz.gitee.io/navigation/dist"
+                    >项目预览</a
+                  >
+                </span>
+              </div>
+              <p>
+                一款基于<strong> jQuery </strong
+                >的实用网页导航，支持网页搜索、常用网站的添加与删除功能。
+              </p>
+              <p>
+                多次使用<strong> SVG Symbols</strong>，通过<strong>
+                  Flex 布局</strong
+                >与<strong>媒体查询</strong>优化移动端与 PC，添加了刷新动画。
+              </p>
+              <p>
+                采用哈希表结构配合 localStorage / JSON
+                序列化实现常用网页的存储功能，PC 端可以使用键盘快捷键访问网页。
+              </p>
+            </div>
+            <img src="images/navigation.png" alt="" />
+          </li>
+          <li>
+            <div class="detail">
+              <div class="detail__title">
+                <h3>简易画板</h3>
+                <span>
+                  <a href="https://github.com/Woozyzzz/canvas-drawing-board"
+                    >源码链接</a
+                  >
+                  <a href="http://woozyzzz.gitee.io/canvas-drawing-board/dist"
+                    >项目预览</a
+                  >
+                </span>
+              </div>
+              <p>
+                为了加深对<strong> Canvas </strong>中 API
+                的理解，自主设计并完成了一款画图板应用。
+              </p>
+              <p>
+                设置<strong>事件委托</strong>调节画笔颜色与粗细，支持 PC
+                与移动端，优化移动端页面，添加了橡皮擦功能。
+              </p>
+              <p>
+                使用 lineTo
+                绘制路径，保证了画笔快速移动时线条的连贯性，从而提升用户体验。
+              </p>
+            </div>
+            <img src="images/canvas-drawing-board.png" alt="" />
+          </li>
+          <li style="page-break-before: always">
+            <div class="detail">
+              <div class="detail__title">
+                <h3>手写 jQuery</h3>
+                <span>
+                  <a href="https://github.com/Woozyzzz/dom-library-jquery"
+                    >源码链接</a
+                  >
+                  <a href="https://www.yuque.com/woozyzzz/ybz8i1/dh10q6"
+                    >博客地址</a
+                  >
+                </span>
+              </div>
+              <p>一款简易 jQuery，采用链式风格对原生 DOM 进行封装。</p>
+              <p>
+                该项目运用<strong>原型</strong>、<strong>闭包</strong>、<strong>别名</strong>等设计模式，实现了元素选择、元素创建、属性修改等常用功能。
+              </p>
+              <p>封装过程使我对原型链 和 jQuery 有了更深刻的认识。</p>
+            </div>
+            <img src="images/dom-library-jquery-blog.png" alt="" />
+          </li>
+          <li>
+            <div class="detail">
+              <div class="detail__title">
                 <h3>封装 DOM 库</h3>
                 <span>
                   <a href="https://github.com/Woozyzzz/dom-library-object"
@@ -218,20 +346,21 @@
                     >博客地址</a
                   >
                 </span>
-              </header>
+              </div>
               <p>
                 一款采用对象风格封装的原生 DOM 库，实现对节点的增删改查操作。
               </p>
               <p>
-                代码中大量运用<strong>重载</strong>与<strong>适配</strong>的设计模式，现已将项目的实现思路与 API
-                的使用方法总结成博客。
+                代码中大量运用<strong>重载</strong>与<strong>适配</strong>的设计模式，现已将项目的实现思路与
+                API 的使用方法总结成博客。
               </p>
             </div>
             <img src="images/dom-library-object-blog.png" alt="" />
           </li>
         </ul>
       </section>
-      <section class="blogs">
+
+      <section class="section article__blogs">
         <h2>技术博客</h2>
         <hr />
         <p>目前已有技术文章21篇</p>
@@ -263,16 +392,17 @@
           </li>
         </ul>
       </section>
-      <section class="intern">
+
+      <section class="section article__internship-experience">
         <h2>实习经历</h2>
         <hr />
         <ul>
           <li>
-            <header>
+            <div class="title">
               <h3>ZOL中关村在线北京总部</h3>
               <h4>中台数据开发（Python）</h4>
               <span><time>2019年7月</time>~<time>2019年9月</time></span>
-            </header>
+            </div>
             <p>
               独立负责训练 Bi-LSTM+CRF
               模型识别手机板块文章中的商品名称，测试准确率达到90%以上
@@ -281,7 +411,8 @@
           </li>
         </ul>
       </section>
-      <section class="bio">
+
+      <section class="section article__bio">
         <h2>个人信息</h2>
         <hr />
         <ul>
@@ -290,7 +421,7 @@
             <span>户籍地：北京市东城区</span>
             <span class="politics">政治面貌：中共党员</span>
           </li>
-          <li class="papersWrapper">
+          <li class="papers-wrapper">
             <ul class="papers">
               <p>论文成果：</p>
               <li>
@@ -314,6 +445,7 @@
         </ul>
       </section>
     </article>
+
     <script src="https://cdn.bootcdn.net/ajax/libs/echarts/4.8.0/echarts.min.js"></script>
     <script src="main.js"></script>
   </body>

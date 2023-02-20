@@ -1,0 +1,46 @@
+@media print {
+  body {
+    margin: 0;
+  }
+
+  body .article section .charts {
+    flex-direction: column;
+  }
+
+  body .article section .charts #radar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+
+  body .article {
+    width: auto;
+    height: auto;
+  }
+
+  body .article section img {
+    display: none;
+  }
+
+  body .article section .charts {
+    flex-direction: column;
+  }
+
+  body .article section .charts #radar {
+    display: none;
+  }
+
+  body .article section.article__internship-experience .title {
+    flex-wrap: wrap;
+  }
+
+  body .article section.article__bio .info {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=index.283e1e0a.css.map */

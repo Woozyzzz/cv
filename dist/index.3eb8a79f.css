@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  background: #777;
+  margin: 20px 0;
+  font-family: -apple-system, Noto Sans, Helvetica Neue, Helvetica, Nimbus Sans L, Arial, Liberation Sans, PingFang SC, Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, Source Han Sans CN, Microsoft YaHei, Wenquanyi Micro Hei, WenQuanYi Zen Hei, ST Heiti, SimHei, WenQuanYi Zen Hei Sharp, sans-serif;
+}
+
+article {
+  width: 21cm;
+  min-height: 29.7cm;
+  background: #fff;
+  margin: 0 auto;
+  padding: 1.2em;
+  overflow: auto;
+}
+
+h1, h2, h3 {
+  color: #000;
+  margin: 0;
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+}
+
+p {
+  margin: .3em 0;
+}
+
+strong {
+  color: #f90;
+}
+
+/*# sourceMappingURL=index.3eb8a79f.css.map */
