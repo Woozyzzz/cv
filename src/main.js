@@ -1,9 +1,18 @@
 const el = (selector) => document.querySelector(selector);
-const charts = el(".charts");
-const radar = el("#radar");
+
+const elHeaderInfo = el(".header__info");
+const birthdayTime = Date.parse("1996-8-18");
+const now = Date.now();
+const diffYears = parseInt((now - birthdayTime) / (1000 * 60 * 60 * 24 * 365));
+const diffYearsText = diffYears ? `${diffYears}岁` : "-";
+const headerInfoText = `男 | ${diffYears} | 前端开发工程师 | 北京 | 硕士`;
+elHeaderInfo.textContent = headerInfoText;
+
+const elCharts = el(".charts");
+const elRadar = el("#radar");
 // 基于准备好的dom，初始化echarts实例
-radar.style.width = `${charts.clientWidth * 0.9}px`;
-const myChart = echarts.init(radar);
+elRadar.style.width = `${elCharts.clientWidth * 0.9}px`;
+const myChart = echarts.init(elRadar);
 
 // 指定图表的配置项和数据
 const option = {
