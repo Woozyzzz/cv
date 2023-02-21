@@ -50,6 +50,20 @@
       }
     }
 
+    &.article__work-experience,
+    &.article__blogs,
+    &.article__internship-experience {
+      p {
+        margin: 4px 4px 0;
+      }
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
     &.article__projects,
     &.article__open-source {
       ul {
@@ -78,19 +92,6 @@
             width: 80px;
           }
         }
-      }
-    }
-
-    &.article__blogs,
-    &.article__internship-experience {
-      p {
-        margin: 4px 0;
-      }
-
-      .title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
       }
     }
 
