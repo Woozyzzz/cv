@@ -28,6 +28,8 @@
       ul {
         li {
           &::before {
+            margin-right: 0.5em;
+            display: inline-block;
             content: "\1F44D";
           }
         }
@@ -43,6 +45,8 @@
 
           li {
             &::before {
+              margin-right: 0.5em;
+              display: inline-block;
               content: "\1F44C";
             }
           }
@@ -54,7 +58,13 @@
     &.article__blogs,
     &.article__internship-experience {
       p {
-        margin: 4px 4px 0;
+        margin: 4px 0;
+
+        &::before {
+          margin-right: 0.5em;
+          display: inline-block;
+          content: "•";
+        }
       }
 
       .title {
@@ -80,6 +90,8 @@
               align-items: center;
 
               h3::before {
+                margin-right: 0.5em;
+                display: inline-block;
                 content: "🌐";
               }
             }
@@ -89,12 +101,20 @@
               flex-direction: column;
 
               h3::before {
+                margin-right: 0.5em;
+                display: inline-block;
                 content: "🧠";
               }
             }
 
             p {
               margin: 0;
+
+              &::before {
+                margin-right: 0.5em;
+                display: inline-block;
+                content: "•";
+              }
             }
           }
 
