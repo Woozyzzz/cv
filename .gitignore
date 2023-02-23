@@ -1,3 +1,5 @@
-/.parcel-cache/
-/node_modules/
-/.gitignore/
+node_modules/
+.parcel-cache/
+development-dist/
+
+.package-lock.json

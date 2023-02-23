@@ -6,7 +6,7 @@
     "sass": "^1.26.9"
   },
   "scripts": {
-    "serve": "rm -rf .parcel-cache/ dist/ && parcel src/index.html",
-    "build": "rm -rf .parcel-cache/ dist/ && parcel build src/index.html --public-url ./"
+    "serve": "parcel index.html --dist-dir development-dist",
+    "build": "parcel build index.html --public-url ./"
   }
 }
