@@ -74,7 +74,17 @@
           margin: 0 0 8px;
 
           .detail {
-            .detail__title {
+            .detail__projects {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              h3::before {
+                content: "🌐";
+              }
+            }
+
+            .detail__open-source {
               display: flex;
               flex-direction: column;
 
