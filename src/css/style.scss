@@ -84,6 +84,7 @@
           width: 22em;
           overflow: hidden;
           text-overflow: ellipsis;
+          word-break: break-all;
 
           &::before {
             margin-left: 0.5em;
