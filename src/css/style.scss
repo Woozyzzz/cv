@@ -72,6 +72,27 @@
         justify-content: space-between;
         align-items: center;
       }
+
+      .blogs__title {
+        display: flex;
+        flex-wrap: wrap;
+
+        .title__item {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          width: 22em;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          &::before {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+            display: inline-block;
+            content: "∘";
+          }
+        }
+      }
     }
 
     &.article__projects,

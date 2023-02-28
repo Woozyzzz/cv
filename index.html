@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-hans">
+<html lang="zh-Hans">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -69,8 +69,8 @@
               >图表库的使用，能够实现复杂的交互逻辑</li
             >
             <li
-              >熟练掌握 Git/Github
-              工作处理流程，对高效的分支管理策略具有独到见解和实践经验</li
+              >熟练掌握<strong> Git/Github </strong
+              >工作处理流程，对高效的分支管理策略具有独到见解和实践经验</li
             >
             <li
               >熟练掌握前后端分离技术，包括 AJAX、跨域、前端路由、Nginx
@@ -81,7 +81,8 @@
               >并能够在项目中使用</li
             >
             <li>熟悉 Webpack 的配置与优化</li>
-            <li>具有敏捷开发实践经验与及时总结撰写技术博客的习惯</li>
+            <li>熟悉敏捷开发核心流程，具有担任团队 Scrum Master 的实践经验</li>
+            <li>能够及时总结专业知识并记录到个人技术博客</li>
           </ul>
           <div id="radar"></div>
         </div>
@@ -97,9 +98,7 @@
               <h4>Web前端工程师</h4>
               <span><time>2020年9月</time>~<time>至今</time></span>
             </div>
-            <p
-              >主要负责组内业务系统的前端开发、设计、评审，及专利交底书的撰写工作。</p
-            >
+            <p>主要负责组内业务系统的前端开发、设计、评审工作。</p>
             <!-- <p>参与内部效率、质量工具的建设</p> -->
           </li>
         </ul>
@@ -119,20 +118,37 @@
                 >该系统对外作为京东物流自有运营、业务能力展示的窗口，为国内外商家、ISV、合作伙伴提供一站式供应链接入方案；对内以接口形式提供规范化、标准化能力，串联供应链全链条上下游各方，简化对接不同系统工作量，有效降低系统对接成本与建设成本。</p
               >
               <p
-                >采用
-                <strong>Monorepo</strong>
-                项目架构，秉承前端模块化理念抽离公共方法、组件，结合
-                <strong>webpack</strong>
-                多页面入口、构建部署配置，隔离内、外网
-                <strong>SPA</strong>。</p
+                >秉承前端模块化理念抽离公共方法、组件，结合<strong>
+                  webpack </strong
+                >多页面构建、部署配置，主动设计并主导项目架构升级为<strong>
+                  Monorepo
+                </strong>
+                ，隔离内、外网<strong> SPA </strong
+                >，及时修复内、外网静态资源越权访问漏洞。</p
               >
-              <p></p>
               <p
-                >源代码完全使用 TypeScript 配合<strong>
-                  vue-property-decorator 装饰器语法</strong
-                >实现，采用 SCSS
-                编写页面样式，并大量使用了<strong>$变量</strong>与<strong>%占位符</strong>优化代码。</p
+                >从0到1抽象<strong>封装业务组件</strong>10+个，包含 Markdown
+                文档标题侧边导航、API
+                参数表格等组件，将单个页面的开发效率提升60%。</p
               >
+              <p
+                >为支持海外物流业务需求，独立设计国际站版本技术方案，引入<strong>
+                  Vue I18n </strong
+                >国际化插件替换语言环境信息配合<strong> :lang 伪类选择器</strong
+                >匹配页面元素，快速实现站点多语言切换功能。</p
+              >
+              <p
+                >在国际化翻译文本替换过程中，主动采用<strong> Node.js </strong
+                >编写脚本，调用<strong> fs </strong>/<strong> path </strong
+                >/<strong> readline </strong>模块 API
+                对翻译文本数据进行预处理并直接输出插件所需的双语映射表 JSON
+                文件，避免人工替换译文导致效率低下、准确率差等问题。</p
+              >
+              <p
+                >对项目有深入思考，独立提炼出两个前端技术专利点并完成<strong>实用新型发明专利</strong>交底书的撰写，两份交底书均通过集团内部专利评审，其中一篇（见下文）已通过专利局审核，现在大为专利检索平台公开。</p
+              >
+              <!-- <p>一种企业应用下内外网页面隔离方法</p>
+              <p>一种B2G贸易模式下支持离线浏览的文档页面构建方法</p> -->
             </div>
           </li>
           <li>
@@ -142,21 +158,15 @@
                 <span><time>2022年8月</time>~<time>2022年10月</time></span>
               </div>
               <p
-                >目前京东物流全国各类线路接近10万条，各场地间线路，包括全国、跨区、区内等会从层级的网络关系无法快速全局性、系统性看清，流量管道阻塞及问题点无法快速识别与疏通，亟需建立各层级维度在多变的干扰场景下（不限于大促、疫情、天气异常、政府活动等），灵活的作战指挥能力。
-                作战指挥沙盘的目标为，看清在商流结束后进入物流的每个环节场地对应流入、流出线路及上下游等网络关联关系，同时接入核心指标，将实际线下运营整合到系统，并按不同层级展现，提供统一数据与图形化决策与指令下达的一体化作战指挥沙盘，加强京东物流全链条清晰可视、提升策略调整灵活性与协调一致性的抗干扰能力。</p
+                >该系统沉淀于2022年3月上海2019冠状病毒聚集性疫情期间京东物流全链路协同应对方案，针对京东物流全国近10万条各层级间网络关系线路无法快速系统性展示与大促、疫情、异常天气等特殊场景下流量管道阻塞无法快速识别疏通的问题，通过可视化物流静态网络关系与实时监控预警指标以及接入策略模型，触发指挥调令并下达至问题环节，全面提升运营体系对抗干扰的应急能力和管理水平。
+              </p>
+              <p
+                >参与项目技术选型并输出技术调研报告，采用<strong>
+                  AntV G6 图可视化引擎</strong
+                >独立完成区域视图泳道与卡片<strong>自定义节点</strong>、运输线路<strong>自定义连边</strong>、展开折叠<strong>自定义行为</strong>的开发，实现全链路各个环节流入、流出线路关联关系，及核心指标监控预警的展示，极大提升策略调整灵活性与图形化决策效率。</p
               >
               <p
-                >从自身需求出发，由本人独立设计及实现，操作流程简单，三秒钟即可快速记账。</p
-              >
-              <p
-                >源代码完全使用 TypeScript 配合<strong>
-                  vue-property-decorator 装饰器语法</strong
-                >实现，采用 SCSS
-                编写页面样式，并大量使用了<strong>$变量</strong>与<strong>%占位符</strong>优化代码。</p
-              >
-              <p
-                >期间遇到了诸多有关 webpack 和 TypeScript
-                的问题，解决问题过程已记录在本人的博客。</p
+                >积极主动探索学习图可视化技术来满足业务诉求，在<strong>时间紧任务重</strong>的情况下加班加点完成区域拓扑模块的开发工作，同时协助后端同学完成全国大盘和场站拓扑模块的开发，对待问题细致认真，获得了项目组同事的好评与信任。</p
               >
             </div>
           </li>
@@ -167,18 +177,19 @@
                 <span><time>2021年6月</time>~<time>2021年12月</time></span>
               </div>
               <p
-                >该系统对外作为京东物流自有运营、业务能力展示的窗口，为国内外商家、ISV、合作伙伴提供一站式供应链接入方案；对内以接口形式提供规范化、标准化能力，串联供应链全链条上下游各方，简化对接不同系统工作量，有效降低系统对接成本与建设成本。</p
+                >该系统几乎覆盖京东物流业务系统全部的权限管控需求，实现多帐号体系的权限访问控制、分级授权、数据聚合、认证鉴权等功能。针对企业存在多用户协同操作资源场景，实现对信息资源的访问控制和操作权限的集中管控，从而降低企业信息安全风险。</p
               >
               <p
-                >采用 <strong>Monorepo</strong> 项目架构，结合
-                <strong>webpack</strong> 多页面入口、构建配置，隔离内、外网
-                <strong>SPA</strong>。</p
+                >主动推动设计部门共同<strong>制定视觉交互规范标准</strong>，提升
+                B 端系统用户体验。</p
               >
               <p
-                >源代码完全使用 TypeScript 配合<strong>
-                  vue-property-decorator 装饰器语法</strong
-                >实现，采用 SCSS
-                编写页面样式，并大量使用了<strong>$变量</strong>与<strong>%占位符</strong>优化代码。</p
+                >参与京东物流 UI 组件库（基于
+                <strong> Element UI</strong
+                >）开发，实现警告链接基础组件并输出说明文档，支持5+个中间件产品的快速开发，大幅节省人力与沟通成本。</p
+              >
+              <p
+                >掌握虚拟长列表性能优化原理，采用<strong>延时加载</strong>、<strong>虚拟滚动</strong>独立优化租户选择弹窗业务组件大数据量渲染性能。</p
               >
             </div>
           </li>
@@ -331,31 +342,31 @@
       <section class="section article__blogs">
         <h2>技术博客</h2>
         <hr />
-        <p>目前已有技术文章21篇</p>
-        <ul>
-          <li>
+        <p>目前已有技术文章40+篇</p>
+        <ul class="blogs__title">
+          <li class="title__item">
             <a href="https://www.yuque.com/woozyzzz/ybz8i1/ar3uvi"
-              >《制作 Canvas 画图板》</a
+              >制作 Canvas 画图板 (yuque.com)</a
             >
           </li>
-          <li>
+          <li class="title__item">
             <a href="https://www.yuque.com/woozyzzz/ybz8i1/dh10q6"
-              >《DOM 封装-链式风格》</a
+              >DOM 封装-链式风格 (yuque.com)</a
             >
           </li>
-          <li>
+          <li class="title__item">
             <a href="https://www.yuque.com/woozyzzz/ybz8i1/yo9rg6"
-              >《DOM 封装-对象风格》</a
+              >DOM 封装-对象风格 (yuque.com)</a
             >
           </li>
-          <li>
+          <li class="title__item">
             <a href="https://www.yuque.com/woozyzzz/ybz8i1/zn4l59"
-              >《浅析 jQuery 操作》</a
+              >浅析 jQuery 操作 (yuque.com)</a
             >
           </li>
-          <li>
+          <li class="title__item">
             <a href="https://www.yuque.com/woozyzzz/ybz8i1/gtaozk"
-              >《浅析 DOM 操作》</a
+              >浅析 DOM 操作 (yuque.com)</a
             >
           </li>
         </ul>
