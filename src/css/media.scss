@@ -51,8 +51,15 @@
           }
         }
 
+        &.article__work-experience,
         &.article__internship-experience {
           .title {
+            flex-wrap: wrap;
+          }
+        }
+
+        &.article__projects {
+          .detail__projects {
             flex-wrap: wrap;
           }
         }
