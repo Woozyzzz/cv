@@ -1,11 +1,11 @@
 const el = (selector) => document.querySelector(selector);
 
 const elHeaderInfo = el(".header__info");
-const birthdayTime = Date.parse("1996-8-18");
+const birthdayTime = Date.parse("1996/8/18");
 const now = Date.now();
 const diffYears = parseInt((now - birthdayTime) / (1000 * 60 * 60 * 24 * 365));
 const diffYearsText = diffYears ? `${diffYears}岁` : "-";
-const headerInfoText = `男 | ${diffYears} | 前端开发工程师 | 北京 | 硕士`;
+const headerInfoText = `男 | ${diffYearsText} | 前端开发工程师 | 北京 | 硕士`;
 elHeaderInfo.textContent = headerInfoText;
 
 const elCharts = el(".charts");
